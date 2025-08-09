@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-Up Page</title>
+    <link rel="stylesheet" href="signup.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Student Info</h1>
+        <form id="signupForm">
+            <div class="input-group">
+                <label for="fn">First Name</label>
+                <input type="text" id="fn" name="firstname" placeholder="Enter your first name"/>
+            </div>
+            
+            <div class="input-group">
+                <label for="ln">Last Name</label>
+                <input type="text" id="ln" name="lastname" placeholder="Enter your last name"/>
+            </div>
+            <div class="input-group">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob"/>
+            </div>
+
+            <div class="input-group">
+                <label>Gender</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="gender" value="male"/> Male</label>
+                    <label><input type="radio" name="gender" value="female"/> Female</label>
+                    <label><input type="radio" name="gender" value="neutral"/> Other</label>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter a valid email address"/>
+            </div>
+
+            <div class="input-group">
+                <label for="num">Phone Number</label>
+                <input type="tel" id="num" name="number" placeholder="Enter your mobile number" pattern="[0-9]{10}"/>
+            </div>
+
+            <div class="input-group">
+                <label for="education">Educational Background</label>
+                <select id="education" name="education">
+                    <option value="" disabled selected>Select current educational qualifications</option>
+                    <option value="secondary">Secondary (Class 10th)</option>
+                    <option value="senior_secondary">Senior Secondary (Class 12th)</option>
+                    <optgroup label="Graduation">
+                        <option value="bachelor_hotel_management">Bachelor in Hotel Management</option>
+                        <option value="culinary_arts">Culinary Arts</option>
+                        <option value="hospitality_management">Hospitality Management</option>
+                        <option value="other_graduation">Others</option>
+                    </optgroup>
+                    <optgroup label="Post Graduation">
+                        <option value="masters_hotel_management">Masters in Hotel Management</option>
+                        <option value="mba_hospitality">MBA in Hospitality Management</option>
+                        <option value="other_post_graduation">Others</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="add">Address</label>
+                <textarea id="add" name="address" placeholder="Type your current address"></textarea>
+            </div>
+
+            <div>
+                <button type="submit">Sign Up</button>
+                <input type="reset" value="Reset"/>
+            </div>
+        </form>
+    </div>
+    
+    <script src="signup.js"></script>
+</body>
+</html>

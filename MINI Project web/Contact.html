@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - HUKUM</title>
+  <link rel="stylesheet" href="contacts.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Contact Us</h1>
+  </header>
+
+  <main class="container">
+    <section class="contact-info">
+      <h2>Contact Information</h2>
+      <div class="info-grid">
+        <div class="info-item">
+          <h3>Address</h3>
+          <p>Hotel University of Knowledge and Upscale Management</p>
+          <p>Katpadi Road, Vellore</p>
+          <p>Tamil Nadu, India - 632014</p>
+        </div>
+        <div class="info-item">
+          <h3>Phone</h3>
+          <p>Main Office: +91 9346170557</p>
+        </div>
+        <div class="info-item">
+          <h3>Email</h3>
+          <p>General Inquiries: hukum@hukum.ac.in</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-form">
+      <h2>Send Us a Message</h2>
+      <form id="contact-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name"/>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email"/>
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject"/>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5"></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+        <p id="form-message" class="hidden"></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
